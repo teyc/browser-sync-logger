@@ -1,0 +1,28 @@
+{
+  "name": "browser-sync-logger",
+  "version": "1.0.0",
+  "description": "When used in conjunction with browser-sync server, sends console.error from the browser to the terminal window.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teyc/browser-sync-logger.git"
+  },
+  "keywords": [
+    "browser-sync",
+    "plugin",
+    "log"
+  ],
+  "author": "Chui Tey teyc@cognoware.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teyc/browser-sync-logger/issues"
+  },
+  "homepage": "https://github.com/teyc/browser-sync-logger#readme",
+  "dependencies": {
+    "browser-sync": "^2.12.8",
+    "eazy-logger": "^2.1.3"
+  }
+}
