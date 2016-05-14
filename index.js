@@ -43,7 +43,7 @@ module.exports.plugin = function (server, client, bs) {
 
 module.exports.hooks = {
     "client:js": [
-        "(function(console) {
+        "(function(console) {",
         "/* send error logs to terminal */",
         "var oldLog = console.error;  ",
         "console.error = function () { ",
@@ -51,7 +51,7 @@ module.exports.hooks = {
         "  console.log.apply(console, arguments);",
         "  oldLog.apply(console, arguments); ",
         "};",
-        "})(console)"
+        "})(console);"
     ].join("\n")
 }
 

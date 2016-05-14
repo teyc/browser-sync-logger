@@ -4,8 +4,17 @@ browser-sync-logger
 This browser-sync plugin sends all console error logs to the
 terminal running browser sync
  
-Configuration
----------------
+Launch from command line
+-------------------------------------
+
+    npm install browser-sync-logger
+
+    node_modules/.bin/browser-sync start \
+      --server . \
+      --plugins browser-sync-logger
+
+Launch with configuration file
+--------------------------------------
 
 in bs-config.js, set 
 
@@ -21,5 +30,6 @@ Running
 
 and then in your client script, try
 
-    console.error("This should show up in your terminal", {"status": "awesome"});
+    console.error("Condition", 
+        {"status": "awesome"});
 
