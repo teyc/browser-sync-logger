@@ -10,6 +10,7 @@
  * }
  **/
 var browserSync = require('browser-sync');
+var logger = require('eazy-logger');
 
 /**
  * Browser-sync plugins implement a plugin() function
@@ -18,7 +19,7 @@ var browserSync = require('browser-sync');
  **/
 module.exports.plugin = function (server, client, bs) {
 
-    var logger2 = client.logger;
+    var logger2 = logger.Logger({prefix:'[{red:ERROR}] '});
 
     function handleError(argsObject) {
         /* logs to _our_ terminal */
