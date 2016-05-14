@@ -1,6 +1,6 @@
 {
   "name": "browser-sync-logger",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "When used in conjunction with browser-sync server, sends console.error from the browser to the terminal window.",
   "main": "index.js",
   "scripts": {
