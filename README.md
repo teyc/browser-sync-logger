@@ -13,7 +13,7 @@ Launch from command line
       --server . \
       --plugins browser-sync-logger
 
-Launch with configuration file
+(alternatively) Launch with configuration file
 --------------------------------------
 
 in bs-config.js, set 
@@ -25,11 +25,17 @@ in bs-config.js, set
     }
 
 Running
+--------------------------------------
 
     browser-sync start --server -c bs-config.js
 
 and then in your client script, try
 
-    console.error("Condition", 
-        {"status": "awesome"});
+    console.error("auth", 
+        {"reason": "token validation failed."});
+
+in the terminal that launched browser-sync, you
+should see
+
+   [ERROR] auth {reason: 'token validation failed'}
 
